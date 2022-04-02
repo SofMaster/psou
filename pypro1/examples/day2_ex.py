@@ -14,7 +14,7 @@ for a in i:
     if a % 3 == 0 and a % 5 == 0:
         hap += a 
         
-print('1~100 사이 3의 배수이면서 4의 배수인 숫자의 합계: ', hap)
+print('1~100 사이 3의 배수이면서 5의 배수인 숫자의 합계: ', hap)
 
 
 # 문3) 주사위를 두 번 던져서 나온 숫자들의 합이 4의 배수가 되는 경우만 출력
@@ -24,4 +24,4 @@ print()
 for a in range(1,7):
     for b in range(1,7):
         if(a + b)%4 == 0:
-            print('a + b = 4의 배수인 경우: ' + str(a) + "" + str(b))
+            print('a + b = 4의 배수인 경우: ' + str(a) + " " + str(b))
