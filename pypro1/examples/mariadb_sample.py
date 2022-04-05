@@ -1,0 +1,1 @@
+# https://github.com/pykwon/etc/blob/master/sample_table_MariaDbl.txt
