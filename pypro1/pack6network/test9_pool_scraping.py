@@ -7,6 +7,7 @@ import requests     # 웹에 접근하기 위한 import
 from bs4 import BeautifulSoup as bs
 import time
 
+from multiprocessing import Pool
 def get_link():     # 제목 a tag(anchor) 읽기
     data = requests.get("https://beomi.github.io/beomi.github.io_old/").text
     soup = bs(data, 'html.parser')
@@ -32,9 +33,26 @@ def get_content(link):
     
 if __name__ == '__main__':
     startTime = time.time()
+    """
     # print(get_link())
     # print(len(get_link()))
     for link in get_link():
-        get_content(link)
-        
+        get_content(link)            # 1.58초
+    """
+    
+    pool = Pool(processes = 4)      # 0.96초
+    pool.map(get_content, get_link())
+    
     print('---%s 초 ---'%(time.time()-startTime))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
