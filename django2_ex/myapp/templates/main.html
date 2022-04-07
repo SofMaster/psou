@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>main 화면입니다. 성별을 선택하세요</h1>
+<form action="/select/result" method = "post">{% csrf_token %}
+	<input type="radio" name = "gender" value="남자" checked="checked"/> 남자
+	<input type="radio" name = "gender" value="여자" /> 여자
+	<br /><br />
+	<input type="submit" value = "제출"/>
+</body>
+</html>
