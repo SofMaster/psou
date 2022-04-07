@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>선택한 성별은 : {{ gender }} 입니다.</h1>
+{% if gender == '남자' %}
+	<img src="../static/images/man.png" />
+{% elif gender == '여자' %}
+	<img src="../static/images/woman.png" />
+{% else %}
+  <p>사람 맞니?</p>
+{% endif %}
+</body>
+</html>
