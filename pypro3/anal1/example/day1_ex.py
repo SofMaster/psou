@@ -18,7 +18,7 @@ for i in range(0,6):
     for j in range(0,6):
         bb[i,j] = k
         k += 1
-        
+print(bb)        
 # 조건2> 2번째 행 전체 원소 출력하기 
 print(bb[1,:]) 
 
