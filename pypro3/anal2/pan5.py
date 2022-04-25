@@ -45,8 +45,8 @@ print(df)
 # print(df.to_json())
 # print(df.to_xml())
 
-df.to_csv('pan5ex1.csv',sep = ',')
-df.to_csv('pan5ex1.csv',sep = ',', index = False)  # 색인은 제외
-df.to_csv('pan5ex1.csv',sep = ',', index = False, header = False)  # 색인, 칼럼명 제외
+#df.to_csv('pan5ex1.csv',sep = ',')
+#df.to_csv('pan5ex1.csv',sep = ',', index = False)  # 색인은 제외
+df.to_csv('pan5ex2.csv',sep = ',', index = False, header = False)  # 색인, 칼럼명 제외
 
 # 기타 다른 파일 형식으로 저장 가능
