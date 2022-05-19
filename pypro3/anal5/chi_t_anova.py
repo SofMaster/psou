@@ -66,7 +66,8 @@ import matplotlib.pyplot as plt
 
 f_sta, pv = stats.f_oneway(gr1,gr2,gr3,gr4)
 print('f value: ', f_sta)
-print('p value: ', pv)    #  0.745442 > 0.05 이므로 귀무 채택
+print('p value: ', pv)   
+#  0.745442 > 0.05 이므로 귀무 채택
 
 print()
 # 사후검정
